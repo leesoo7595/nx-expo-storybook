@@ -3,15 +3,26 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
+    "@gorhom/bottom-sheet": "^4.6.4",
+    "@react-native-async-storage/async-storage": "^2.0.0",
+    "@storybook/react-native": "^8.3.5",
     "@testing-library/jest-native": "*",
     "@testing-library/react-native": "*",
-    "metro-config": "*",
-    "react-native": "*",
     "expo": "*",
-    "react-native-svg": "*",
-    "react-native-web": "*"
+    "metro-config": "*",
+    "react-dom": "^18.3.1",
+    "react-native": "*",
+    "react-native-gesture-handler": "^2.20.0",
+    "react-native-reanimated": "^3.15.4",
+    "react-native-safe-area-context": "^4.11.0",
+    "react-native-svg": "^15.7.1",
+    "react-native-web": "*",
+    "react": "18.2.0"
   },
   "scripts": {
-    "eas-build-post-install": "cd ../../ && node tools/scripts/eas-build-post-install.mjs . apps/nx-expo"
+    "eas-build-post-install": "cd ../../ && node tools/scripts/eas-build-post-install.mjs . apps/nx-expo",
+    "storybook-generate": "sb-rn-get-stories",
+    "android": "expo run:android",
+    "ios": "expo run:ios"
   }
 }
