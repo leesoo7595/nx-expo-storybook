@@ -56,3 +56,5 @@ npm-debug.*
 web-build/
 cache/
 
+apps/nx-expo/ios
+apps/nx-expo/android
