@@ -7,7 +7,11 @@ module.exports = [
   {
     files: ['**/*.ts', '**/*.tsx', '**/*.js', '**/*.jsx'],
     // Override or add rules here
-    rules: {},
+    rules: {
+      '@typescript-eslint/ban-ts-comment': 'off',
+      'no-var': 'off',
+      '@typescript-eslint/no-require-imports': 'off',
+    },
   },
   { ignores: ['.expo', 'web-build', 'cache', 'dist'] },
 ];
