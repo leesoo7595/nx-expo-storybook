@@ -48,8 +48,5 @@
   "workspaces": [
     "apps/*"
   ],
-  "packageManager": "npm@10.5.2",
-  "overrides": {
-    "react-native-reanimated": "~3.10.1"
-  }
+  "packageManager": "npm@10.5.2"
 }

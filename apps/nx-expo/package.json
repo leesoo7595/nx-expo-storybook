@@ -3,8 +3,11 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
+    "@expo/metro-runtime": "~3.2.3",
     "@gorhom/bottom-sheet": "^4.6.4",
     "@react-native-async-storage/async-storage": "1.23.1",
+    "@react-native-community/datetimepicker": "8.0.1",
+    "@react-native-community/slider": "4.5.2",
     "@storybook/addon-ondevice-actions": "^8.3.5",
     "@storybook/addon-ondevice-controls": "^8.3.5",
     "@storybook/react": "^8.3.5",
@@ -22,16 +25,14 @@
     "react-native-svg": "15.2.0",
     "react-native-svg-transformer": "^1.5.0",
     "react-native-web": "*",
-    "@expo/metro-runtime": "~3.2.3"
+    "storybook": "^8.3.5"
   },
   "scripts": {
     "eas-build-post-install": "cd ../../ && node tools/scripts/eas-build-post-install.mjs . apps/nx-expo",
     "storybook-generate": "sb-rn-get-stories",
     "android": "expo run:android",
     "ios": "expo run:ios",
-    "start": "expo start --dev-client"
-  },
-  "overrides": {
-    "react-native-reanimated": "~3.10.1"
+    "start": "expo start --dev-client",
+    "prebuild": "expo prebuild --clean"
   }
 }
